@@ -1,5 +1,5 @@
 <template>
-    <Head title="Dashboard &sdot; FinArk Admin Panel &sdot;" />
+    <Head title="Dashboard &sdot; Leba Admin Panel &sdot;" />
     <div class="container-fluid py-4 px-5">
         <AdminHeader />
         <div class="row">

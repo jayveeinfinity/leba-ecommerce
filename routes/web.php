@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\CarController;
 use App\Http\Controllers\LandingController;
+use App\Http\Controllers\OrderController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,4 +20,16 @@ Route::get('/', [LandingController::class, 'index'])->name('landing');
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::prefix('admin')->group(function () {
+    Route::get('/', function() {
+        return redirect('/admin/dashboard');
+    });
+    Route::get('/dashboard', [LandingController::class, 'index'])->name('landing');
+
+    Route::get('/cars', [CarController::class, 'index'])->name('admin.cars.index');
+    Route::get('/cars/create', [CarController::class, 'create'])->name('admin.cars.create');
+    Route::get('/cars/edit', [CarController::class, 'edit'])->name('admin.cars.edit');
+
+    Route::get('/orders', [OrderController::class, 'index'])->name('admin.orders.index');
+});

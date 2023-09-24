@@ -7,9 +7,9 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Noto+Sans:300,400,500,600,700,800|PT+Mono:300,400,500,600,700" rel="stylesheet" />
         
         <!-- CSS Files -->
-        <!-- <link rel="icon" type="image/png" href="{{ asset('storage/images/brands/logo.png') }}"> -->
+        <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2554/2554936.png">
         <link type="text/css" id="pagestyle" href="{{ asset('css/corporate-ui-dashboard.css?v=1.0.0') }}" rel="stylesheet">
-        <!-- <link href="mix('/css/custom.css')" rel="stylesheet" /> -->
+        <link href="{{ mix('/css/custom.css') }}" rel="stylesheet" />
 
         <script src="{{ mix('/js/app.js') }}" defer></script>
         <script src="{{ mix('/js/manifest.js') }}" defer></script>

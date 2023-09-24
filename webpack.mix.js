@@ -15,4 +15,5 @@ mix.js('resources/js/app.js', 'public/js')
     .extract()
     .vue(3)
     .version()
-    .sass('resources/sass/app.scss', 'public/css');
+    .sass('resources/sass/app.scss', 'public/css')
+    .sass('resources/sass/custom.scss', 'public/css');

@@ -9,9 +9,9 @@ import CorporateUILayout from '../js/Shared/Layouts/CorporateUI';
 //******************** FontAwesome ****************************//
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { faCar, faGauge, faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRotateLeft, faCar, faCheck, faEdit, faFileExport, faGauge, faPlus, faReceipt, faTimes, faTrash, faUsers } from '@fortawesome/free-solid-svg-icons';
 // import { faWhatsappSquare, faFacebook, faInstagramSquare, faSquareYoutube, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-library.add(faGauge, faCar, faUsers);
+library.add(faGauge, faCar, faUsers, faPlus, faEdit, faTrash, faReceipt, faFileExport, faCheck, faTimes, faArrowRotateLeft);
 
 createInertiaApp({
     resolve: async name => {

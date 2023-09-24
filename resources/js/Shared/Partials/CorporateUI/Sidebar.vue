@@ -2,9 +2,9 @@
     <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 bg-slate-900 fixed-start " id="sidenav-main">
         <div class="sidenav-header">
             <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
-            <a class="navbar-brand d-flex align-items-center m-0" href="/admin">
+            <a class="navbar-brand d-flex align-items-center m-0 text-white" href="/admin">
                 <!-- <img src="/storage/images/brands/logo-banner-white.png" /> -->
-                LEBA
+                <span style="font-size: 1rem;">LEBA E-commerce</span>
                 <!-- <span class="font-weight-bold text-lg">FinArk</span> -->
             </a>
         </div>
@@ -25,9 +25,15 @@
                     </div>
                 </li>
                 <li class="nav-item border-start my-0 pt-2">
-                    <Link class="nav-link position-relative ms-0 ps-2 py-2 " href="/admin/okr">
+                    <Link class="nav-link position-relative ms-0 ps-2 py-2 " href="/admin/cars">
                         <FontAwesomeIcon icon="fa-solid fa-car" />
-                        <span class="nav-link-text ms-1">Products</span>
+                        <span class="nav-link-text ms-1">Cars</span>
+                    </Link>
+                </li>
+                <li class="nav-item border-start my-0 pt-2">
+                    <Link class="nav-link position-relative ms-0 ps-2 py-2 " href="/admin/orders">
+                        <FontAwesomeIcon icon="fa-solid fa-receipt" />
+                        <span class="nav-link-text ms-1">Orders</span>
                     </Link>
                 </li>
                 <li class="nav-item mt-2">
